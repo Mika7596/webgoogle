@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    flex-grow: 1;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+a {
+    color: #1F1F1F;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+
+/* NAV IZQUIERDA */
+header nav:first-child {
+    padding: 12px 8px;
+}
+
+header nav:first-child li:last-child {
+    margin-left: 20px;
+}
+
+/* NAV DERECHA */
+header nav:last-child {
+    padding: 3px 10px;
+}
+
+header nav:last-child a {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.apps {
+    margin: 0 3px 0 8px;
+    padding: 7px 8px 4px 7px;
+    border-radius: 50%;
+}
+
+.appicon {
+    color: #5f6368;
+    font-size: 24px;
+}
+
+.apps:hover {
+    background-color: rgba(60, 64, 67, .08);
+    cursor: pointer;
+}
+/*LISTA DE APLICACIONES */
+.applist {
+    border: 2px groove lightgrey;
+    border-radius: 20px;
+    width: 240px;
+    height: 350px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 47px;
+    right: 45px;
+    overflow-y: scroll;
+}
+
+.applist a {
+    text-decoration: none;
+}
+
+.apps:hover .applist {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.applist figure {
+    width: 58px;
+    height: 70px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.applist img {
+    display: block;
+    width: 25px;
+    margin: 8px auto;
+}
+
+figure:hover {
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+/* BOTÓN AZUL */
+header button {
+    background-color: #1A73F9;
+    border: transparent;
+    border-radius: 5px;
+    color: white;
+    font-size: 14.5px;
+    padding: 10px 25px 9px 25px;
+}
+
+header button:hover {
+    background-color: #1b66c9;
+    box-shadow: 0 1px 2px 0 rgba(66, 64, 67, .15, 0) 0 1px 2px 0 rgba(60, 64, 67, .3);
+    cursor: pointer;
+}
+
+/* FIN HEADER */
+
+/* MAIN */
+main {
+    text-align: center;
+}
+
+main>img {
+    margin: 76.5px 20px 23px 20px;
+}
+
+/* SEARCH BOX */
+.search {
+    border: 1px solid rgba(60, 64, 67, .2);
+    border-radius: 50px;
+    width: 582px;
+    margin: auto;
+    padding: 8px 15px 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.lupa {
+    color: rgba(60, 64, 67, .5);
+    font-size: 19.7px;
+    margin-right: 12px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.micro {
+    max-width: 14px;
+    margin: 0 11px -3px 0;
+}
+
+.camara {
+    width: 24px;
+    margin: 1px 1px -2px 10px;
+}
+
+/* LOS DOS BOTONES */
+.botones {
+    width: 313px;
+    margin: auto;
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones button {
+    background-color: #F8F9FA;
+     border: 1px solid transparent;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 9px 17px 8.5px 17px;
+}
+
+.botones button:hover {
+    border: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+/* OPCIONES DE LENGUAS */
+.lenguas {
+    color: #474747;
+    font-size: 13px;
+    padding: 29px 16px;
+}
+
+.lenguas>a {
+    color: #1A0DAB;
+    font-size: 12.9px;
+    margin-left: 3px;
+    margin-right: 3.5px;
+}
+
+/* FIN MAIN */
+
+/* FOOTER */
+footer {
+    background-color: #f2f2f2;
+    font-size: 15px;
+}
+
+.footer1 {
+    border-bottom: 1px solid #dadce0;
+    color: #1F1F1F;
+    padding: 15px 30px;   
+}
+/* FOOTER DE ABAJO */
+.footer2 {
+    padding: 14.5px 0 16px 0;
+}
+
+.footer2 nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 25px;
+}
+
+.footer2 img {
+    width: 12px;
+    margin-right: 6px;
+}
+
+.footer2 ul:first-child li {
+    margin-right: 20px;
+}
+
+.footer2 ul:nth-child(2) {
+    margin-left: -85px;
+    vertical-align: middle;
+}
+
+.footer2 ul:last-child li {
+    margin-left: 30px;
+}
